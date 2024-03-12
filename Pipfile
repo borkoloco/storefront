@@ -24,6 +24,8 @@ whitenoise = "*"
 gunicorn = "*"
 django-silk = "*"
 dj-database-url = "*"
+psycopg2 = "*"
+psycopg = "*"
 
 [dev-packages]
 autopep8 = "*"
