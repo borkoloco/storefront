@@ -18,7 +18,7 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
-REDISCLOUD_URL = os.environ['REDIS_URL']
+REDISCLOUD_URL = os.environ['REDISCLOUD_URL']
 
 CELERY_BROKER_URL = REDISCLOUD_URL
 
