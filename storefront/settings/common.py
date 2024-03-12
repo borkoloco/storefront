@@ -181,12 +181,8 @@ SIMPLE_JWT = {
 
 
 
-EMAIL_BACKEND= 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST= 'localhost'
-EMAIL_HOST_USER=''
-EMAIL_HOST_PASSWORD=''
-EMAIL_PORT=2525
-DEFAULT_FROM_EMAIL='from@borkbuy.com'
+
+
 
 ADMINS = [
     ('Bork','admin@borkbuy.com')
@@ -205,16 +201,7 @@ CELERY_BEAT_SCHEDULE ={
 }
 
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/2",
-        "TIMEOUT": 10*60,
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
+
 
 LOGGING = {
     'version':1,
